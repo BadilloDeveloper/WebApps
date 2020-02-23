@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<title>My Notes App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, userscalable=
+0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<link href="estilos.css" rel="stylesheet">
+<script type="text/javascript" src="comun.js"></script>
+<script type="text/javascript" src="bd.js"></script>
+</head>
+<body>
+    
+<div id="pgMyNotes" style="width:100%">
+<div class="header">
+<h1>Mis notas</h1>
+
+<a href="#" onclick="navigate(1)"><i class="material-icons botonderecha">add</i></a>&nbsp;
+    <md-input-container  class="md-icon-float md-block md-title ">
+        <!-- below is the material icons -->
+        <input type="text" id="buscar" class="" placeholder="Escriba para buscar..." >
+        <button class="material-icons "  onclick="Filtrar();">search</button>
+    </md-input-container>
+</div>
+<div class="content" >
+    <div id="Listanotas" >
+
+    </div>
+</div>
+</div>
+
+
+
+<div id="pgNewNote" style="width:100%">
+<div class="header">
+<h1>Nueva nota</h1>
+<a href="#"><i class="material-icons botonderecha nopadding nomargin"  onclick="NuevaNota()">check</i></a>
+<a href="#"><i class="material-icons botonderecha nopadding nomargin" onclick="navigate(0)">close</i></a>
+</div>
+<div class="content contenido">
+    <input id="Asunto" name="Asunto" type="text" placeholder="Asunto" maxlength="25">
+    <textarea id="Texto" name="Texto" type="text"  placeholder="Escriba aqui..." ></textarea>
+    <!--<label><input id="fileAvatar" type="file" accept="image/*" onchange="readImage(this);"  > Selecciona imagen </label>
+    <img style="margin-top:10px;" src="#" width="150" id="imgAvatarPreview">-->
+
+</div>
+</div>
+
+
+
+<div id="pgViewNote" style="width:100%">
+<div class="header">
+<a href="#"><i class="material-icons botonderecha" onclick="navigate(0)">arrow_back</i></a>
+<h1>Nota</h1>
+</div>
+<div class="content contenido">
+<input id="txtAsunto" name="txtAsunto" type="text" placeholder="Asunto">
+<textarea id="txtTexto" name="txtTexto" type="text"  placeholder="Escriba aqui..." ></textarea>
+<!--<img style="margin-top:10px;" src="#" width="150" id="adjunto">-->
+</div>
+
+</body>
+</html>

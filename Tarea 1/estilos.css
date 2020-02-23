@@ -1,0 +1,247 @@
+
+
+/* common styles */
+
+body {
+    margin: 40px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #27CC25;
+    font-size: 0.6em;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header h1 {
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+
+.header button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: white;
+    
+}
+.botonderecha{
+float: right;
+padding: 0px;
+
+
+}
+
+
+
+/* desktop style */
+
+@media screen and (min-width:1024px) {
+    .Titulo{
+
+        float: left;
+        font-size:16px;
+        font-weight: bold;
+    }
+    
+    .Texto{
+        float:left;
+        font-size:14px;
+        color:grey;
+        text-align: center;
+    }
+}
+
+
+/* mobile style */
+
+@media screen and (max-width:1023px) {
+   
+}
+
+.page {
+    display: none;
+}
+
+
+/*MODAL*/
+
+    .modal {
+    position: fixed;
+    padding-top: 100px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+    }
+    .modal input[type=text] {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid darkblue;
+    }
+    .modal input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid blue;
+    }
+    .modal input[type=file] {
+    display: none;
+    text-align: center;
+    }
+    .modal .footer {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 10px;
+    justify-content: center;
+    }
+    .modal button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    .modal button:hover, .modal label:hover {
+    background-color: blue;
+    }
+    .modal label {
+    background-color: darkblue;
+    display: block;
+    width: 160px;
+    margin: auto;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .modal img {
+    visibility: hidden;
+    display: block;
+    margin: auto;
+    height: 100px;
+    }
+
+/* contenido*/
+
+    .contenido input[type=text] {
+        display: block;
+        margin: auto;
+        height: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid darkblue;
+        padding:10px;
+        margin:10px;
+    }
+    .contenido input[type=text]:focus {
+        outline: none;
+        border-bottom: 2px solid blue;
+    }
+
+    .contenido textarea[type=text] {
+        display: block;
+        margin: auto;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid darkblue;
+        padding:10px;
+        margin:10px;
+    }
+
+    .contenido textarea[type=text]:focus {
+        outline: none;
+        border-bottom: 2px solid blue;
+    }
+
+        .contenido input[type=file] {
+        display: none;
+        text-align: center;
+        }
+        .contenido button:hover, .modal label:hover {
+            background-color: blue;
+            }
+            .contenido label {
+            background-color: darkblue;
+            display: block;
+            width: 160px;
+            margin: auto;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            }
+            .contenido img {
+            visibility: hidden;
+            display: block;
+            margin: auto;
+            height: 100px;
+            }
+
+    .contenido input[type=file] {
+    display: none;
+    text-align: center;
+    }
+/* cards*/
+
+.tarjeta{
+    margin-bottom:5px;
+    width: 100%;
+    border: 1px solid black;
+    min-height: 60px;
+    background-color: khaki;
+    
+}
+
+.iconodelete{
+    float: right;
+    align-content: center;
+    margin-right: 5%;
+}
+
+.imagennota{
+    float:left;
+    width: 60px;
+    cursor:pointer;
+}
+
+.Titulo{
+
+    float: left;
+    font-size:10px;
+    font-weight: bold;
+}
+
+.Texto{
+    float:left;
+    font-size:8px;
+    color:grey;
+    text-align: center;
+}
+
+.nopadding{
+    padding:0px;
+}
+.nomargin{
+    margin:0px;
+}

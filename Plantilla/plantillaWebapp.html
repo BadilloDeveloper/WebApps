@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alquilight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, userscalable=0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="comun.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <header>
+
+        <h1>Alquilight</h1>
+        <button><i class="material-icons" id="btNavbar" name="btNavbar">menu</i></button>
+    </header>
+    <nav id="navbar" name="navbar" >
+        <div onclick="modal()">
+            <img src="a.png" id="imgAvatar" onchange="readImage(this);">
+            <span id="titleAvatar">Acceso</span>
+        </div>
+        <ul>
+            <li><a href="#" onclick="navigate('lab1')">Buscar Apartamento</a></li>
+            <li><a href="#" onclick="navigate('lab2')">Buscar Habitación</a></li>
+            <li><a href="#" onclick="navigate('lab3')">Busca compañeros de Piso</a></li>
+            <li><a href="#" onclick="navigate('lab4')">Comprar Apartamento</a></li>
+            <li><a href="#" onclick="navigate('lab5')">Comprar para reforma</a></li>
+
+
+        </ul>
+    </nav>
+
+
+    <section id="user" class="modal">
+        <input id="txtName" type="text" placeholder="Usuario">
+        <input id="txtEmail" type="text" placeholder="Email">
+        <label><input id="fileAvatar" type="file" accept="image/*" onchange="readImage(this);"  > Selecciona imagen </label>
+        <img id="imgAvatarPreview" src="#" >
+        <div class="footer">
+        <button id="btAccept"><i class="material-icons">check</i></button>
+        <button id="btCancel"><i class="material-icons">close</i></button>
+        </div>
+    </section>
+
+    <section id="lab1">
+        <h1>Buscar Apartamento</h1>
+        <h2>Orientación</h2>
+        alpha:<span id="orientationAlpha"></span> beta:
+        <span id="orientationBeta"></span> gamma:
+        <span id="orientationGamma"></span>
+        <h2>Aceleración</h2>
+        x:<span id="accelerationX"></span> y:
+        <span id="accelerationY"></span> z:
+        <span id="accelerationZ"></span>
+        <h2>Rotación</h2>
+        alpha:<span id="rotationAlpha"></span> beta:
+        <span id="rotationBeta"></span> gamma:
+        <span id="rotationGamma"></span>
+    </section>
+    <section id="lab2">
+        <h1>Buscar Habitación</h1>
+    </section>
+    <section id="lab3">
+        <h1>Buscar compañeros de Piso</h1>
+    </section>
+
+</body>
+
+<script type="text/javascript" src="comun.js"></script>
+
+
+</html>

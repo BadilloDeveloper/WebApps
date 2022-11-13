@@ -12,6 +12,6 @@
     "backbone": "^1.4.0",
     "ripplet": "0.0.2",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   }
 }
